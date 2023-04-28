@@ -1,0 +1,74 @@
+<?php 
+header("Cache-Control: max-age=0");
+?>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Video Presentation</title>
+    <link rel="stylesheet" href='static/style.css'>
+  </head>
+  <body>
+    <!-- head tile -->
+    <div class="slogan-container">
+        <div class="shadow"></div>
+        <h1 class="slogan">ENTDECKE NEUES AUS ALTEN ZEITEN!</h1>
+    </div>
+    <!-- containers containig preview slideshows for
+       the video, title, description and playbutton -->
+    <main>
+      <div class="video">
+        <img class="slide-img" src="/static/bilder/mueller/img01.png"> 
+        <div class="shadow"></div>
+        <h2>Die Obere Mühle</h2>
+        <p>Mehl aus Dinkel und Emmer (4:07)</p>
+        <a class="button" onclick="playVideo('static/filme/mueller.mp4')">Film starten</a>
+      </div>
+        <div class="video">
+          <img class="slide-img" src="/static/bilder/imker/img01.png"> 
+          <div class="shadow"></div>
+          <h2>Der Imkehr</h2>
+          <p>Von Bienenwachs und Honig (4:05)</p>
+          <a class="button" onclick="playVideo('static/filme/imker.mp4')">Film starten</a>
+        </div>
+        <div class="video">
+          <img class="slide-img" src="/static/bilder/sense/img01.png"> 
+          <div class="shadow"></div>
+          <h2>Eine Wiese sensen</h2>
+          <p>Was ist eigentlich ein Worb? (18:06) </p>
+          <a class="button" onclick="playVideo('static/filme/sense.mp4')">Film starten</a>
+        </div>
+        <div class="video">
+          <img class="slide-img" src="/static/bilder/wengerter/img01.png"> 
+          <div class="shadow"></div>
+          <h2>Der Wengerter</h2>
+          <p>Herstellung einer Hacke (5:06)</p>
+          <a class="button" onclick="playVideo('static/filme/wengerter.mp4')">Film starten</a>
+        </div>
+        <div class="video">
+          <img class="slide-img" src="/static/bilder/sackkunde/img01.png"> 
+          <div class="shadow"></div>
+          <h2>Kleine Sackkunde</h2>
+          <p>Geschichten und Verzierungen (4:58)</p> 
+          <a class="button" onclick="playVideo('static/filme/sackkunde.mp4')">Film starten</a>
+        </div>
+    </main>
+
+    <!-- logo right bottom corner -->
+    <div class="logo-container">
+      <img align="right" src="/static/bilder/logo_inv.svg">
+      <!-- <img align="right" src="bilder/startseite_carousel.svg"> -->
+    </div>
+
+    <!-- java script doc -->
+    <script src="/static/script.js"></script>
+  </body>
+</html>
+
+
+<!-- kein zoom effekt, wenn maus über bild
+schrift besser lesbar wengeter, nahaufnahme schmied, größere überschrift, bilder etwas runter rutschen, 
+logo mittig oder auf linie, langsamere bildwechsel, timer vor abbruch, slideshow gleichzeitig?-->
