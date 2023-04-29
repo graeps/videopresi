@@ -68,7 +68,7 @@ Terminal öffnen mit CTRL+ALT+T
 
 ###############autostart##################
             Datei erstellen und beschreiben:
-            sudo nano /home/pi/.config/lxsession/LXDE-pi/autostart
+            sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
 
             Inhalt reinkopieren (Achtung, wieder keine Leerzeichen oder Tabs am Zeilenanfang und in der letzten Zeile den wirlichen Namen im Dateipfad angeben):
 
