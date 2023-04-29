@@ -27,7 +27,7 @@ def play_video():
     media_player.set_media(media)
 
     #set a hotkey to escape fullscreen
-    # keyboard.add_hotkey("Esc", media_player.stop())
+    keyboard.add_hotkey("Esc", media_player.stop())
 
     # Set up fullscreen mode
     media_player.set_fullscreen(True)
@@ -51,25 +51,6 @@ def play_video():
     media_player.stop()
     return jsonify(success=True)
 
-def start_flask():
-    app.run()
 
 if __name__ == "__main__":
-    # Start the Flask server in a separate thread
-    flask_thread = threading.Thread(target=start_flask)
-    flask_thread.start()
-
-    # Wait for the Flask server to start
-    time.sleep(2)
-
-    # Open Chromium in kiosk mode and go to localhost:5000
-    webbrowser.get("chromium-browser --kiosk %s").open("http://localhost:5000")
-
-    # Wait for the user to close the browser
-    while True:
-        time.sleep(1)
-        if webbrowser._browsers:
-            break
-
-    # Stop the Flask server thread
-    flask_thread.join()
+    app.run()
