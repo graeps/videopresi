@@ -77,6 +77,10 @@ Terminal öffnen mit CTRL+ALT+T
                     @lxpanel --profile LXDE-pi
                     @pcmanfm --desktop --profile LXDE-pi
                     @xscreensaver -no-splash
+                    @xset s 0 0
+                    @xset s noblank
+                    @xset s noexpose
+                    @xset dpms 0 0 0
 
                     /home/pi//<presi_name>/chrome.sh
                     /home/pi/<presi_name>/videopresi.sh
