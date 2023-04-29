@@ -1,7 +1,9 @@
 Neuen Raspberry einrichten:
 
 0. Graphik hochstellen: 
-    Einstellungen>Raspberry Pi-Konfigurationen>Leistung>GPU-Speicher=256 und neustarten.
+        Einstellungen>Raspberry Pi-Konfigurationen>Leistung>GPU-Speicher=256 und neustarten.
+     Bildschirmschoner desactivieren:
+        Einstellungen>Raspberry Pi-Konfigurationen>Display>Disable "Screen Blanking"  
 
 Terminal öffnen mit CTRL+ALT+T
 
@@ -75,11 +77,6 @@ Terminal öffnen mit CTRL+ALT+T
                     @lxpanel --profile LXDE-pi
                     @pcmanfm --desktop --profile LXDE-pi
                     @xscreensaver -no-splash
-            
-                    #kein screen blanking
-                    @xset s noblank
-                    @xset s off
-                    @xset s -dpms
 
                     /home/pi//<presi_name>/chrome.sh
                     /home/pi/<presi_name>/videopresi.sh
