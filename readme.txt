@@ -23,7 +23,7 @@ Terminal öffnen mit CTRL+ALT+T
 8. Jetzt Anleitung unten zum #autostart befolgen.
 9. Finaler Test nach Neustart:
             sudo reboot
-    nach der Start sollte nach mindestens 1min und höchstens 2min die Präsentation im Randlosen fullscreen Modus angezeigt werden.
+    nach der Start sollte nach mindestens 1min und höchstens 2min die Präsentation im randlosen Fullscreen-Modus angezeigt werden.
    (CRTL+F4 um herauszukommen)
 10. Jetzt kann der restliche /home/pi/videopresi Ordner gelöscht werden. (Außer die readme.txt Datei  ;-))
 
