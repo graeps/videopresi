@@ -37,7 +37,7 @@ Terminal öffnen mit CTRL+ALT+T
 
         Inhalt reinkopieren 
         (Achtung, wieder keine Leerzeichen oder Tabs am Zeilenanfang und in der letzten 
-        Zeile den wirlichen Namen im Dateipfad, z.B.  ~/<presi_schmied>/chrome.sh, angeben):
+        Zeile den wirlichen Namen im Dateipfad, z.B.  ~/presi_schmied/chrome.sh, angeben):
 
                     @lxpanel --profile LXDE-pi
                     @pcmanfm --desktop --profile LXDE-pi
