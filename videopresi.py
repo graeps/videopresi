@@ -28,7 +28,7 @@ def play_video():
     media_player.set_fullscreen(True)
 
     def on_click(x,y,button,pressed):
-        if pressed:
+        if pressed and x>1500 and y<250:
 #            media_player.set_fullscreen(False)
             media_player.stop()
     listener = mouse.Listener(on_click=on_click)
