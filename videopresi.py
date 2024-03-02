@@ -22,11 +22,14 @@ def play_video():
     media = vlc_instance.media_new(videoURL)
     media_player.set_media(media)
 
-
+    
 
     # Set up fullscreen mode
     media_player.set_fullscreen(True)
 
+    #disable mouse input to make fullscreen toggle impossible
+    media_player.video_set_mouse_input(False)
+    
     def on_click(x,y,button,pressed):
         if pressed and x>1500 and y<250:
 #            media_player.set_fullscreen(False)
