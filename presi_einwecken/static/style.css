@@ -33,7 +33,7 @@ body {
   background-blend-mode: multiply;
   color: #fff;
   user-select: none;
-  cursor:none;
+  /*cursor:none;*/
 }
 
 .slogan-container{
