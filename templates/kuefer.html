@@ -32,6 +32,8 @@
 </div>
 
 <script type="module" src="/static/scripts/kuefer.js"></script>
-<script>
+<script type="module">
+    import { playVideo } from "/static/scripts/play-video.js";
+    window.playVideo = playVideo
     document.querySelector('#img-kuefer').src = imgPath + 'kuefer/img01.png';
 </script>

@@ -60,7 +60,9 @@
 </div>
 
 <script type="module" src="/static/scripts/wengerter.js"></script>
-<script>
+<script type="module">
+    import { playVideo } from "/static/scripts/play-video.js";
+    window.playVideo = playVideo
     document.querySelector('#img-mueller').src = imgPath + 'mueller/img01.png';
     document.querySelector('#img-imker').src = imgPath + 'imker/img01.png';
     document.querySelector('#img-sense').src = imgPath + 'sense/img01.png';

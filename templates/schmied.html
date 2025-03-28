@@ -33,6 +33,8 @@
 </div>
 
 <script type="module" src="/static/scripts/schmied.js"></script>
-<script>
+<script type="module">
+    import { playVideo } from "/static/scripts/play-video.js";
+    window.playVideo = playVideo
     document.querySelector('#img-schmied').src = imgPath + 'schmied/img01.png';
 </script>

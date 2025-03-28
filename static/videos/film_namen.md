@@ -1,4 +1,4 @@
-#### Die Videos müssen unter folgenden Namen gespeichert werden:
+#### Die Videos müssen unter folgenden Namen in diesem Ordner abgelegt werden:
 
 ##### Videos zum Einwecken etc.
 haltbarmachen.mp4
