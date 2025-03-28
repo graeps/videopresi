@@ -1,0 +1,38 @@
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelternmuseum Unterjesingen - Video Presentation Schmied</title>
+    <link rel="stylesheet" href="/static/styles/main-styles.css">
+    <link rel="stylesheet" href="/static/styles/single-video.css">
+    <link rel="icon" href="/static/images/logo_inv.svg" type="image/x-icon">
+    <script>
+        const imgPath = "/static/images/";
+        const videoPath = "/static/videos/"
+    </script>
+</head>
+
+<body>
+<div class="slogan-container">
+    <div class="shadow"></div>
+    <h1 class="slogan">ENTDECKE NEUES AUS ALTEN ZEITEN!</h1>
+</div>
+
+<main>
+    <div class="video">
+        <img class="slide-img" id="img-schmied" src="">
+        <div class="shadow"></div>
+        <h2>Der Schmied</h2>
+        <p>Herstellung einer Hacke (5:52)</p>
+        <a class="button" onclick="playVideo(videoPath + 'schmied.mp4')">Film starten</a>
+    </div>
+</main>
+
+<div class="logo-container">
+    <img style="float: right;" src="/static/images/logo_inv.svg">
+</div>
+
+<script type="module" src="/static/scripts/schmied.js"></script>
+<script>
+    document.querySelector('#img-schmied').src = imgPath + 'schmied/img01.png';
+</script>

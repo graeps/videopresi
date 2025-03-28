@@ -1,0 +1,69 @@
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelternmuseum Unterjesingen - Video Presentation Wengerter</title>
+    <link rel="stylesheet" href="/static/styles/main-styles.css">
+    <link rel="stylesheet" href="/static/styles/five-videos-4k.css">
+    <link rel="icon" href="/static/images/logo_inv.svg" type="image/x-icon">
+    <script>
+        const imgPath = "/static/images/";
+        const videoPath = "/static/videos/"
+    </script>
+</head>
+<body>
+<div class="slogan-container">
+    <div class="shadow"></div>
+    <h1 class="slogan">ENTDECKE NEUES AUS ALTEN ZEITEN!</h1>
+</div>
+
+<main>
+    <div class="video">
+        <img class="slide-img" id="img-mueller" src="">
+        <div class="shadow"></div>
+        <h2>Die Obere Mühle</h2>
+        <p>Mehl aus Dinkel und Emmer (4:07)</p>
+        <a class="button" onclick="playVideo(videoPath + 'mueller.mp4')">Film starten</a>
+    </div>
+    <div class="video">
+        <img class="slide-img" id="img-imker" src="">
+        <div class="shadow"></div>
+        <h2>Der Imker</h2>
+        <p>Von Bienenwachs und Honig (4:05)</p>
+        <a class="button" onclick="playVideo(videoPath + 'imker.mp4')">Film starten</a>
+    </div>
+    <div class="video">
+        <img class="slide-img" id="img-sense" src="">
+        <div class="shadow"></div>
+        <h2>Mit der Sense mähen</h2>
+        <p>Was ist eigentlich ein Worb? (18:06) </p>
+        <a class="button" onclick="playVideo(videoPath + 'sense.mp4')">Film starten</a>
+    </div>
+    <div class="video">
+        <img class="slide-img" id="img-wengerter" src="">
+        <div class="shadow"></div>
+        <h2>Der Wengerter</h2>
+        <p>Weinbau in Unterjesingen (5:06)</p>
+        <a class="button" onclick="playVideo(videoPath + 'wengerter.mp4')">Film starten</a>
+    </div>
+    <div class="video">
+        <img class="slide-img" id="img-sackkunde" src="">
+        <div class="shadow"></div>
+        <h2>Kleine Sackkunde</h2>
+        <p>Geschichten und Verzierungen (4:58)</p>
+        <a class="button" onclick="playVideo(videoPath + 'sackkunde.mp4')">Film starten</a>
+    </div>
+</main>
+
+<div class="logo-container">
+    <img style="float: right;" src="/static/images/logo_inv.svg">
+</div>
+
+<script type="module" src="/static/scripts/wengerter.js"></script>
+<script>
+    document.querySelector('#img-mueller').src = imgPath + 'mueller/img01.png';
+    document.querySelector('#img-imker').src = imgPath + 'imker/img01.png';
+    document.querySelector('#img-sense').src = imgPath + 'sense/img01.png';
+    document.querySelector('#img-wengerter').src = imgPath + 'wengerter/img01.png';
+    document.querySelector('#img-sackkunde').src = imgPath + 'sackkunde/img01.png';
+</script>

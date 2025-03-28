@@ -1,0 +1,37 @@
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelternmuseum Unterjesingen - Video Presentation Wagner</title>
+    <link rel="stylesheet" href="/static/styles/main-styles.css">
+    <link rel="stylesheet" href="/static/styles/single-video.css">
+    <link rel="icon" href="/static/images/logo_inv.svg" type="image/x-icon">
+    <script>
+        const imgPath = "/static/images/";
+        const videoPath = "/static/videos/"
+    </script>
+</head>
+<body>
+<div class="slogan-container">
+    <div class="shadow"></div>
+    <h1 class="slogan">ENTDECKE NEUES AUS ALTEN ZEITEN!</h1>
+</div>
+
+<main>
+    <div class="video">
+        <img class="slide-img" id="img-wagner" src="">
+        <div class="shadow"></div>
+        <h2>Der Wagner</h2>
+        <p>Herstellung eines Hackenstiels (5:10)</p>
+        <a class="button" onclick="playVideo(videoPath + 'wagner.mp4')">Film starten</a>
+    </div>
+</main>
+
+<div class="logo-container">
+    <img style="float: right;" src="/static/images/logo_inv.svg">
+</div>
+
+<script type="module" src="/static/scripts/wagner.js"></script>
+<script>
+    document.querySelector('#img-wagner').src = imgPath + 'wagner/img01.png';
+</script>
