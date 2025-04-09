@@ -33,9 +33,9 @@ class ButtonFrame(ctk.CTkFrame):
         super().__init__(parent)
         self.grid(row=0, column=1, sticky="e", padx=(0, 10))
 
-        load_img_play = Image.open("./videoplayer/icons/play_white.png")
-        load_img_pause = Image.open("./videoplayer/icons/pause_white.png")
-        load_img_quit = Image.open("./videoplayer/icons/logout_white.png")
+        load_img_play = Image.open("./src/videoplayer/icons/play_white.png")
+        load_img_pause = Image.open("./src/videoplayer/icons/pause_white.png")
+        load_img_quit = Image.open("./src/videoplayer/icons/logout_white.png")
         img_play = ctk.CTkImage(dark_image=load_img_play, light_image=load_img_play, size=(30, 30))
         img_pause = ctk.CTkImage(dark_image=load_img_pause, light_image=load_img_pause, size=(30, 30))
         img_quit = ctk.CTkImage(dark_image=load_img_quit, light_image=load_img_quit, size=(30, 30))
@@ -47,8 +47,8 @@ class ButtonFrame(ctk.CTkFrame):
         self.btn_play.grid(row=0, column=0, pady=(150, 15))
         self.btn_pause.grid(row=1, column=0, pady=15)
 
-        load_volume_down = Image.open("./videoplayer/icons/volume_down.png")
-        load_volume_up = Image.open("./videoplayer/icons/volume_up.png")
+        load_volume_down = Image.open("./src/videoplayer/icons/volume_down.png")
+        load_volume_up = Image.open("./src/videoplayer/icons/volume_up.png")
         img_volume_up = ctk.CTkImage(dark_image=load_volume_up, light_image=load_volume_up, size=(30, 30))
         img_volume_down = ctk.CTkImage(dark_image=load_volume_down, light_image=load_volume_down, size=(30, 30))
 
@@ -197,7 +197,7 @@ class VideoPlayer(ctk.CTk):
     @classmethod
     def start(cls, video):
         ctk.set_appearance_mode("dark")
-        ctk.set_default_color_theme("./videoplayer/color_theme.json")
+        ctk.set_default_color_theme("./src/videoplayer/color_theme.json")
         player = cls(video)
         player.after(1000, player.play_video_buffered)
         player.mainloop()

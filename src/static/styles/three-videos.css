@@ -1,7 +1,7 @@
 .video {
     position: relative;
     flex: 0 0 min(26%, 400px); /* Flexible width with maximum cap */
-    height: min(70%, 350px); /* Relative height with maximum cap */
+    height: min(50%, 350px); /* Relative height with maximum cap */
     aspect-ratio: 16/9; /* Maintain video proportions */
     box-shadow: 0 0 min(2vh, 20px) rgba(0, 0, 0, 0.3);
     border-radius: min(1.5vh, 15px);
@@ -25,4 +25,19 @@
         flex: 0 0 min(80%, 300px); /* Nearly full width on mobile */
         height: min(40%, 250px);
     }
+}
+
+.video:nth-child(1) {
+    flex: 30%;
+    max-width: 40vw;
+}
+
+.video:nth-child(2) {
+    flex: 20%;
+    max-width: 30vw;
+}
+
+.video:nth-child(3) {
+    flex: 100%;
+    max-width: 40vw;
 }

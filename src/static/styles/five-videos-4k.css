@@ -1,7 +1,7 @@
 .video {
-    flex: 0 0 min(25%, 500px); /* Won't grow beyond 300px */
+    flex: 0 0 min(45%, 400px); /* Won't grow beyond 300px */
     position: relative;
-    height: min(55%, 250px); /* Caps height at 250px */
+    height: min(55%, 550px); /* Caps height at 250px */
     box-shadow: 0 0 min(2vh, 15px) rgba(0, 0, 0, 0.3); /* 15px max shadow */
     border-radius: min(1.5vh, 10px); /* 10px max radius */
     overflow: hidden;
@@ -9,7 +9,6 @@
     z-index: 0;
     filter: brightness(1);
     transition: all 3s ease-in-out;
-    aspect-ratio: 16/9; /* Prevents distortion */
 
     @media (min-width: 2560px) {
         flex-basis: min(20%, 400px); /* Slightly larger on 4K */
@@ -25,4 +24,18 @@
         flex: 0 0 min(80%, 300px); /* Nearly full width on mobile */
         height: min(40%, 250px);
     }
+}
+
+.video:nth-child(2) {
+    flex: 27%;
+    max-width: 25vw;
+}
+
+.video:nth-child(4) {
+    flex: 27%;
+    max-width: 35vw;
+}
+
+.video:nth-child(5) {
+    margin-right: 10vh;
 }

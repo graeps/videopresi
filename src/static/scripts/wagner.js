@@ -1,4 +1,4 @@
-import {Slideshow, playVideo} from './slideshow.js';
+import {Slideshow} from './slideshow.js';
 
 const basePath = "/static/images/";
 const films = ["wagner"];
