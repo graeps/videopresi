@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Improve font loading behavior */
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri_Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Broadsheet';
+    src: url('../fonts/BroadsheetRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-color: #70ad47;
+    --button-color: #5c8a33;
+    --button-hover: #c1f8a4;
+    --text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Calibri', serif;
+    background: var(--primary-color) url('../images/textur.avif') center/cover no-repeat;
+    background-blend-mode: multiply;
+    color: #fff;
+    user-select: none;
+    /* Ensure consistent scaling */
+    overflow-x: hidden;
+}
+
+.slogan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    margin-top: 3.5vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Add max-width for very wide screens */
+    max-width: 100vw;
+}
+
+.slogan {
+    font-size: min(6.5vh, 72px); /* Cap maximum font size */
+    text-align: center;
+    font-family: 'Broadsheet', serif;
+    text-shadow: var(--text-shadow);
+    /* Add responsive padding */
+    padding: 0 5vw;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 90%;
+    gap: 9vh;
+    /* Add max-width and center for very wide screens */
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 5vw;
+}
+
+.video:nth-child(2) {
+    flex-basis: 27%;
+}
+
+.video:nth-child(4) {
+    flex-basis: 27%;
+}
+
+.video:nth-child(5) {
+    margin-right: 10vh;
+}
+
+.video:hover {
+    filter: brightness(1.2);
+    transform: scale(1.01);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.video h2,
+.video p {
+    margin-left: 5%;
+    z-index: 2;
+    position: relative;
+    text-shadow: 1px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.video h2 {
+    margin-top: 3.5%;
+    margin-bottom: 0;
+    font-size: min(3.5vh, 36px);
+}
+
+.video p {
+    margin-top: 0;
+    font-size: min(2.5vh, 26px);
+    opacity: 0.8;
+    text-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.video .shadow {
+    position: absolute;
+    width: 100%;
+    height: 11vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    z-index: 1;
+}
+
+.video img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+a.button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: min(3%, 15px) min(4%, 20px);
+    font-size: min(2.5vh, 26px);
+    border-radius: 1.5vh;
+    background: linear-gradient(to bottom, #a5c96a, var(--button-color));
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 2;
+    min-width: 120px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4),
+    inset 0 2px 0 #a2c865;
+    border: 1px solid #5C8A33FF;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+a.button:hover {
+    background-color: var(--button-hover);
+}
+
+.slide-img {
+    opacity: 1;
+    background-color: black;
+    transition: opacity 3s ease-in-out;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 min(4vh, 40px) min(4vh, 40px);
+}
+
+.logo-container img {
+    height: min(12vh, 120px);
+    width: auto;
+}
+
+/* Media Queries for very high resolutions */
+@media (min-width: 2560px) {
+    :root {
+        font-size: 1.1vw; /* Slightly increase base font size for 4K */
+    }
+
+    main {
+        gap: min(7vh, 80px);
+    }
+
+    .video {
+        height: min(30vh, 350px);
+    }
+}

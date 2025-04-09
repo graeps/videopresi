@@ -1,0 +1,28 @@
+.video {
+    flex: 0 0 min(25%, 500px); /* Won't grow beyond 300px */
+    position: relative;
+    height: min(55%, 250px); /* Caps height at 250px */
+    box-shadow: 0 0 min(2vh, 15px) rgba(0, 0, 0, 0.3); /* 15px max shadow */
+    border-radius: min(1.5vh, 10px); /* 10px max radius */
+    overflow: hidden;
+    background-color: black;
+    z-index: 0;
+    filter: brightness(1);
+    transition: all 3s ease-in-out;
+    aspect-ratio: 16/9; /* Prevents distortion */
+
+    @media (min-width: 2560px) {
+        flex-basis: min(20%, 400px); /* Slightly larger on 4K */
+        height: min(55%, 350px);
+    }
+
+    @media (max-width: 1024px) {
+        flex: 0 0 min(40%, 350px); /* Wider on smaller screens */
+        height: min(50%, 300px);
+    }
+
+    @media (max-width: 768px) {
+        flex: 0 0 min(80%, 300px); /* Nearly full width on mobile */
+        height: min(40%, 250px);
+    }
+}

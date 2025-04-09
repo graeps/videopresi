@@ -1,0 +1,15 @@
+[Unit]
+Description=Video Presentation in Kiosk Mode
+After=graphical.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/videopresi
+ExecStart=/bin/bash /home/pi/videopresi/scripts/start.sh
+Restart=always
+RestartSec=10
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=multi-user.target

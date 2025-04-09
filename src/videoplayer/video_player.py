@@ -72,6 +72,7 @@ class VideoPlayer(ctk.CTk):
         super().__init__()
         self.video = video
         self.attributes('-fullscreen', True)
+        self.config(cursor="none")
         self._initialize_ui()
         self._initialize_vlc()
         self.update_video_progress()
@@ -90,6 +91,15 @@ class VideoPlayer(ctk.CTk):
         self.progress_var = self.control_frame.progress_var
         self.progress_bar = self.control_frame.progress_bar
         self.time_label = self.control_frame.time_label
+
+        self.control_frame.grid_remove()
+        self.button_frame.grid_remove()
+        self.controls_visible = False
+        self.hide_controls_after = None
+
+        self.canvas.bind("<Button-1>", self.toggle_controls)
+        self.bind_all("<Motion>", self.show_controls_on_motion)
+        self.bind("<Escape>", lambda e: self.quit_program())
 
     def _initialize_vlc(self):
         args = ['--no-xlib', '--vout=mmal_vout'] if sys.platform.startswith('linux') else []
@@ -146,6 +156,35 @@ class VideoPlayer(ctk.CTk):
                     text=f"{self._format_time(current_time)} / {self._format_time(total_duration)}")
         self.after(1000, self.update_video_progress)
 
+    def toggle_controls(self, event=None):
+        if self.controls_visible:
+            self.control_frame.grid_remove()
+            self.button_frame.grid_remove()
+            self.controls_visible = False
+        else:
+            self.control_frame.grid()
+            self.button_frame.grid()
+            self.controls_visible = True
+            self.reset_hide_timer()
+
+    def show_controls_on_motion(self, event=None):
+        if not self.controls_visible:
+            self.control_frame.grid()
+            self.button_frame.grid()
+            self.controls_visible = True
+        self.reset_hide_timer()
+
+    def reset_hide_timer(self, event=None):
+        if self.controls_visible:
+            if self.hide_controls_after:
+                self.after_cancel(self.hide_controls_after)
+            self.hide_controls_after = self.after(5000, self._hide_controls)
+
+    def _hide_controls(self):
+        self.control_frame.grid_remove()
+        self.button_frame.grid_remove()
+        self.controls_visible = False
+
     @staticmethod
     def _format_time(milliseconds):
         seconds = (milliseconds // 1000) % 60
@@ -153,14 +192,10 @@ class VideoPlayer(ctk.CTk):
         return f"{minutes:02}:{seconds:02}"
 
     def _on_video_end(self, event):
-        print("1")
-        # self.quit()
-        print("2")
         self.destroy()
-        print("3")
 
     @classmethod
-    def start(cls, video="videopresi/static/videos/haltbarmachen.mp4"):
+    def start(cls, video):
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("./videoplayer/color_theme.json")
         player = cls(video)

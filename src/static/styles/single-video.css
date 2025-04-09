@@ -1,0 +1,18 @@
+.video {
+    position: relative;
+    flex: 0 0 60%; /* Always take exactly half the container width */
+    box-shadow: 0 0 min(2vh, 20px) rgba(0, 0, 0, 0.3);
+    border-radius: min(1.5vh, 15px);
+    overflow: hidden;
+    background-color: black;
+    z-index: 0;
+    transition: all 0.3s ease;
+    aspect-ratio: 16/9; /* Fallback for modern browsers */
+}
+
+/* Optional: For very large screens (4K+) */
+@media (min-width: 2560px) {
+    .video {
+        max-width: 50vw; /* Ensure never exceeds half viewport */
+    }
+}
