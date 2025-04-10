@@ -58,9 +58,9 @@ pip install -r requirements.txt
 # 5. systemd-Service
 log "Systemd-Service wird konfiguriert..."
 if [ "$IS_TEST" = false ]; then
-  sudo cp systemd/kelternmuseum.service /etc/systemd/system/
-  sudo systemctl enable kelternmuseum.service
-  sudo systemctl start kelternmuseum.service
+  sudo cp systemd/keltermuseum.service /etc/systemd/system/
+  sudo systemctl enable keltermuseum.service
+  sudo systemctl start keltermuseum.service
 fi
 
 # 6. Neustart

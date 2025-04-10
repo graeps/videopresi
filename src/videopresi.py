@@ -10,7 +10,7 @@ app = Flask(__name__)
 def show_video_collection(presentation):
     presentations = {
         "kuefer": {
-            "title": "Kelternmuseum Unterjesingen - Kuefer",
+            "title": "keltermuseum Unterjesingen - Kuefer",
             "css": ["single-video.css"],
             "script": "kuefer.js",
             "videos": [
@@ -24,7 +24,7 @@ def show_video_collection(presentation):
             ]
         },
         "schmied": {
-            "title": "Kelternmuseum Unterjesingen - Schmied",
+            "title": "keltermuseum Unterjesingen - Schmied",
             "css": ["single-video.css"],
             "script": "schmied.js",
             "videos": [
@@ -38,7 +38,7 @@ def show_video_collection(presentation):
             ]
         },
         "wagner": {
-            "title": "Kelternmuseum Unterjesingen - Wagner",
+            "title": "keltermuseum Unterjesingen - Wagner",
             "css": ["single-video.css"],
             "script": "wagner.js",
             "videos": [
@@ -52,7 +52,7 @@ def show_video_collection(presentation):
             ]
         },
         "einwecken": {
-            "title": "Kelternmuseum Unterjesingen - Einwecken",
+            "title": "keltermuseum Unterjesingen - Einwecken",
             "css": ["three-videos.css"],
             "script": "einwecken.js",
             "videos": [
@@ -80,7 +80,7 @@ def show_video_collection(presentation):
             ]
         },
         "wengerter": {
-            "title": "Kelternmuseum Unterjesingen - Wengerter",
+            "title": "keltermuseum Unterjesingen - Wengerter",
             "css": ["five-videos-4k.css"],
             "script": "wengerter.js",
             "videos": [
