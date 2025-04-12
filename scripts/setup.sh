@@ -22,14 +22,14 @@ case "$choice" in
   *) PRESENTATION_URL="http://localhost:5000" ;;
 esac
 
-echo "PRESENTATION_URL=\"$PRESENTATION_URL\"" > ~/videopresi/presentation.conf
+echo "PRESENTATION_URL=\"$PRESENTATION_URL\"" > ${HOME}/videopresi/presentation.conf
 
 # 2. Abhängigkeiten
 log "Systemaktualisierungen & Python-Abhängigkeiten..."
 sudo apt-get update
 sudo apt-get install -y python3-pip python3-venv
 
-cd ~/videopresi || exit 1
+cd ${HOME}/videopresi || exit 1
 python3 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
@@ -50,8 +50,6 @@ log "Bildschirm-Schoner und Energiesparen werden deaktiviert (Wayland)..."
 gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.desktop.screensaver lock-enabled false
 gsettings set org.gnome.desktop.screensaver idle-activation-enabled false
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'
 
 # Mask suspend/hibernate
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
