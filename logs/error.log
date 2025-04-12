@@ -235,3 +235,111 @@ Port 5000 is in use by another program. Either identify and stop that program, o
 Address already in use
 Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
 ==== Process crashed at Sa 12. Apr 23:29:41 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:29:51] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:29:51 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:30:02] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:30:02 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:30:12] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:30:13 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:30:23] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:30:24 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:30:34] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:30:35 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:30:45] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:30:46 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:30:56] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:30:57 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:31:07] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:31:08 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:31:18] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:31:19 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:31:29] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:31:30 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:31:40] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:31:41 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:31:51] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:31:52 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:32:02] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:32:03 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:32:13] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:32:14 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:32:24] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:32:25 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:32:35] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:32:35 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:32:46] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:32:46 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:32:57] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:32:58 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:33:08] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:33:08 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:33:18] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:33:19 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:33:29] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:33:30 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:33:40] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:33:41 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:33:51] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:33:52 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:34:02] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:34:03 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:34:13] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:34:14 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:34:24] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:34:25 CEST 2025 ====
+127.0.0.1 - - [12/Apr/2025 23:34:35] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at Sa 12. Apr 23:34:36 CEST 2025 ====

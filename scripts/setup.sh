@@ -37,11 +37,11 @@ pip install -r requirements.txt
 
 # 3. systemd-Service
 log "Systemd-Service wird konfiguriert..."
-if [ "$IS_TEST" != "true" ]; then
-  sudo cp systemd/keltermuseum.service /etc/systemd/system/
-  sudo systemctl enable keltermuseum.service
-  sudo systemctl start keltermuseum.service
-fi
+mkdir ${HOME}/.config/systemd/user/
+sudo cp systemd/keltermuseum.service ${HOME}/.config/systemd/user/
+sudo systemctl --user enable keltermuseum.service
+sudo systemctl --user start keltermuseum.service
+
 
 # 4. Bildschirm-Schoner & Energiesparen deaktivieren (Wayland)
 log "Bildschirm-Schoner und Energiesparen werden deaktiviert (Wayland)..."
