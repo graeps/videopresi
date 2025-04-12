@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/styles/{{ main_css }}">
+    {% for css_file in css %}
+        <link rel="stylesheet" href="/static/styles/{{ css_file }}">
+    {% endfor %}
+    <link rel="icon" href="/images/logo_inv.svg" type="image/x-icon">
+    <script>
+        const imgPath = "/static/images/";
+        const videoPath = "";
+    </script>
+</head>
+
+<body>
+<div class="slogan-container">
+    <div class="shadow">
+        <h1 class="slogan">ENTDECKE NEUES AUS ALTEN ZEITEN!</h1>
+    </div>
+</div>
+
+<main>
+    {% for video in videos %}
+        <div class="video">
+            <img class="slide-img" id="{{ video.image_id }}" src="">
+            <div class="shadow"></div>
+            <h2>{{ video.title }}</h2>
+            <p>{{ video.description }}</p>
+            <a class="button" onclick="playVideo(videoPath + '{{ video.video_file }}')">Film starten</a>
+        </div>
+    {% endfor %}
+</main>
+
+<div class="logo-container">
+    <img style="float: right;" src="/static/images/logo_inv.svg">
+</div>
+
+<div id="video-overlay"
+     style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:black; z-index:1000;">
+    <video id="video-player" disablePictureInPicture controls autoplay controlsList="nofullscreen"
+           style="width:100%; height:100%; object-fit:contain;"></video>
+    <button id="close-video"
+            style="position:absolute; top:10px; right:10px; z-index:1001; font-size:2em; background:none; color:white; border:none;">
+        ✕
+    </button>
+</div>
+<div id="buffering"
+     style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:1002; color:white;">
+    Lade...
+</div>
+
+<script type="module" src="/static/scripts/{{ script }}"></script>
+<script>
+    function playVideo(filename) {
+        const overlay = document.getElementById("video-overlay");
+        const player = document.getElementById("video-player");
+        const close = document.getElementById("close-video");
+        const buffering = document.getElementById("buffering");
+
+        buffering.style.display = "block";
+        overlay.style.display = "block";
+        player.src = "/static/videos/" + filename;
+        player.load();
+        player.pause()
+
+        player.oncanplay = () => {
+            setTimeout(() => {
+                buffering.style.display = "none";
+                player.play();
+            }, 3000);
+        };
+
+        close.onclick = () => {
+            player.pause();
+            player.src = "";
+            overlay.style.display = "none";
+            buffering.style.display = "none";
+            document.onfullscreenchange = null;
+        };
+
+
+        player.onended = () => {
+            overlay.style.display = "none";
+            player.src = "";
+        };
+
+        document.onfullscreenchange = () => {
+            if (!document.fullscreenElement) {
+                player.pause();
+                player.src = "";
+                overlay.style.display = "none";
+                buffering.style.display = "none";
+            }
+        };
+    }
+</script>
+</body>
+</html>

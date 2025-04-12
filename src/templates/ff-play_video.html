@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Video Player</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+      overflow: hidden;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" autoplay controls>
+    <source src="{{ url_for('static', filename='videos/' + video_file) }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+<script>
+  const video = document.getElementById("video");
+  const referer = "{{ referer }}";
+
+  function enterFullscreen(element) {
+    if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if (element.webkitRequestFullscreen) {
+      element.webkitRequestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.msRequestFullscreen) {
+      element.msRequestFullscreen();
+    }
+  }
+
+  video.addEventListener("loadedmetadata", () => {
+    enterFullscreen(video);
+  });
+
+  document.addEventListener("fullscreenchange", () => {
+    if (!document.fullscreenElement &&
+        !document.webkitFullscreenElement &&
+        !document.mozFullScreenElement &&
+        !document.msFullscreenElement) {
+      window.location.href = referer;
+    }
+  });
+
+  video.addEventListener("ended", () => {
+    window.location.href = referer;
+  });
+</script>
+
+</body>
+</html>
