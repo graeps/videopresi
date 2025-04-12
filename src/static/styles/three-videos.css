@@ -1,8 +1,7 @@
 .video {
     position: relative;
-    flex: 0 0 min(26%, 400px); /* Flexible width with maximum cap */
-    height: min(50%, 350px); /* Relative height with maximum cap */
-    aspect-ratio: 16/9; /* Maintain video proportions */
+    flex: 0 0 min(26%, 400px);
+    height: min(50%, 350px);
     box-shadow: 0 0 min(2vh, 20px) rgba(0, 0, 0, 0.3);
     border-radius: min(1.5vh, 15px);
     overflow: hidden;
@@ -29,15 +28,18 @@
 
 .video:nth-child(1) {
     flex: 30%;
-    max-width: 40vw;
+    max-width: 30vw;
+    margin-top: 30px;
 }
 
 .video:nth-child(2) {
-    flex: 20%;
+    flex: 30%;
     max-width: 30vw;
+    margin-top: 30px;
+
 }
 
 .video:nth-child(3) {
     flex: 100%;
-    max-width: 40vw;
+    max-width: 30vw;
 }

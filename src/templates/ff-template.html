@@ -8,7 +8,7 @@
     {% for css_file in css %}
         <link rel="stylesheet" href="/static/styles/{{ css_file }}">
     {% endfor %}
-    <link rel="icon" href="/static/images/logo_inv.svg" type="image/x-icon">
+    <link rel="icon" href="/static/images/logo_inv.svg" type="image/svg+xml">
     <script>
         const imgPath = "/static/images/";
         const videoPath = "";
@@ -16,26 +16,28 @@
 </head>
 
 <body>
-<div class="slogan-container">
-    <div class="shadow">
-        <h1 class="slogan">ENTDECKE NEUES AUS ALTEN ZEITEN!</h1>
-    </div>
-</div>
-
-<main>
-    {% for video in videos %}
-        <div class="video">
-            <img class="slide-img" id="{{ video.image_id }}" src="" data-img="{{ video.image }}">
-            <div class="shadow"></div>
-            <h2>{{ video.title }}</h2>
-            <p>{{ video.description }}</p>
-            <a class="button" onclick="playVideo(videoPath + '{{ video.video_file }}')">Film starten</a>
+<div id="page-content">
+    <div class="slogan-container">
+        <div class="shadow">
+            <h1 class="slogan">ENTDECKE NEUES AUS ALTEN ZEITEN!</h1>
         </div>
-    {% endfor %}
-</main>
+    </div>
 
-<div class="logo-container">
-    <img style="float: right;" src="/static/images/logo_inv.svg">
+    <main>
+        {% for video in videos %}
+            <div class="video">
+                <img class="slide-img" id="{{ video.image_id }}" src="" data-img="{{ video.image }}">
+                <div class="shadow"></div>
+                <h2>{{ video.title }}</h2>
+                <p>{{ video.description }}</p>
+                <a class="button" onclick="playVideo(videoPath + '{{ video.video_file }}')">Film starten</a>
+            </div>
+        {% endfor %}
+    </main>
+
+    <div class="logo-container">
+        <img style="float: right;" src="/static/images/logo_inv.svg">
+    </div>
 </div>
 
 <div id="video-overlay"
@@ -48,6 +50,7 @@
         ✕
     </button>
 </div>
+
 <div id="buffering"
      style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:1002; color:white;">
     Lade...
@@ -64,12 +67,15 @@
         const player = document.getElementById("video-player");
         const close = document.getElementById("close-video");
         const buffering = document.getElementById("buffering");
+        const content = document.getElementById("page-content");
 
         buffering.style.display = "block";
         overlay.style.display = "block";
+        content.style.display = "none";
+
         player.src = "/static/videos/" + filename;
         player.load();
-        player.pause()
+        player.pause();
 
         player.oncanplay = () => {
             setTimeout(() => {
@@ -78,27 +84,20 @@
             }, 3000);
         };
 
-        close.onclick = () => {
+        const cleanup = () => {
             player.pause();
             player.src = "";
             overlay.style.display = "none";
             buffering.style.display = "none";
+            content.style.display = "";
             document.onfullscreenchange = null;
         };
 
-
-        player.onended = () => {
-            overlay.style.display = "none";
-            player.src = "";
-        };
+        close.onclick = cleanup;
+        player.onended = cleanup;
 
         document.onfullscreenchange = () => {
-            if (!document.fullscreenElement) {
-                player.pause();
-                player.src = "";
-                overlay.style.display = "none";
-                buffering.style.display = "none";
-            }
+            if (!document.fullscreenElement) cleanup();
         };
     }
 </script>
