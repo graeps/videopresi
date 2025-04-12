@@ -1,1 +1,4 @@
 *.mp4
+ff-venv/
+clean-venv-videopresi/
+venv/

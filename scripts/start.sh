@@ -11,7 +11,8 @@ source ${HOME}/videopresi/venv/bin/activate
 
 while true; do
   # Starte Flask-Server
-  python3 ${HOME}/videopresi/src/videopresi_browser.py >> ${HOME}/videopresi/logs/run.log 2>> ${HOME}/videopresi/logs/error.log &
+  cd ${HOME}/videopresi/src
+  gunicorn --bind localhost:5000 videopresi_browser:app >> ${HOME}/videopresi/logs/run.log 2>> ${HOME}/videopresi/logs/error.log &
   FLASK_PID=$!
 
   # Warten bis Flask erreichbar ist (max. 30s)
