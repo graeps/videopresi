@@ -22,7 +22,7 @@ case "$choice" in
   *) PRESENTATION_URL="http://localhost:5000" ;;
 esac
 
-echo "PRESENTATION_URL=\"$PRESENTATION_URL\"" > ${HOME}/videopresi/presentation.conf
+echo "PRESENTATION_URL=\"$PRESENTATION_URL\"" > ${HOME}/videopsresi/presentation.conf
 
 # 2. Abhängigkeiten
 log "Systemaktualisierungen & Python-Abhängigkeiten..."
