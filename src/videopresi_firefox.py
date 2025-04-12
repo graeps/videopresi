@@ -130,4 +130,4 @@ def show_video_collection(presentation):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=5050, debug=True)

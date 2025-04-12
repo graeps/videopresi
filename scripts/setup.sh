@@ -1,28 +1,10 @@
 #!/bin/bash
 
-IS_TEST=${IS_TEST:-false}
-LOG_PREFIX=">>>"
-
 log() {
-  echo "$LOG_PREFIX $1"
+  echo "[INFO] $1"
 }
 
-# 1. GPU-Speicher
-log "GPU-Speicher wird auf 256MB eingestellt..."
-if [ "$IS_TEST" = false ] && command -v raspi-config &> /dev/null; then
-  sudo raspi-config nonint do_memory_split 256
-fi
-
-# 2. Bildschirmschoner deaktivieren
-log "Bildschirmschoner wird deaktiviert..."
-if [ "$IS_TEST" = false ]; then
-  sudo raspi-config nonint do_blanking 1
-  xset s off
-  xset -dpms
-  xset s noblank
-fi
-
-# 3. Präsentation auswählen
+# 1. Präsentation auswählen
 log "Welche Präsentation soll auf diesem RasPi laufen?"
 echo "1) Der Schmied"
 echo "2) Der Küfer"
@@ -31,7 +13,7 @@ echo "4) Einwecken, Haltbarmachen, der Bäcker"
 echo "5) Der Wengerter, Sensenkurs, Mühle, Imker und Sackkunde"
 read -r -p "Wähle mit Taste (1/2/3/4/5): " choice
 
-case $choice in
+case "$choice" in
   1) PRESENTATION_URL="http://localhost:5000/schmied" ;;
   2) PRESENTATION_URL="http://localhost:5000/kuefer" ;;
   3) PRESENTATION_URL="http://localhost:5000/wagner" ;;
@@ -42,12 +24,10 @@ esac
 
 echo "PRESENTATION_URL=\"$PRESENTATION_URL\"" > ~/videopresi/presentation.conf
 
-# 4. Abhängigkeiten
+# 2. Abhängigkeiten
 log "Systemaktualisierungen & Python-Abhängigkeiten..."
-if [ "$IS_TEST" = false ]; then
-  sudo apt-get update
-  sudo apt-get install -y python3-pip python3-venv
-fi
+sudo apt-get update
+sudo apt-get install -y python3-pip python3-venv
 
 cd ~/videopresi || exit 1
 python3 -m venv venv
@@ -55,18 +35,35 @@ source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# 5. systemd-Service
+# 3. systemd-Service
 log "Systemd-Service wird konfiguriert..."
-if [ "$IS_TEST" = false ]; then
+if [ "$IS_TEST" != "true" ]; then
   sudo cp systemd/keltermuseum.service /etc/systemd/system/
   sudo systemctl enable keltermuseum.service
   sudo systemctl start keltermuseum.service
 fi
 
-# 6. Neustart
+# 4. Bildschirm-Schoner & Energiesparen deaktivieren (Wayland)
+log "Bildschirm-Schoner und Energiesparen werden deaktiviert (Wayland)..."
+
+# Disable power-saving using gsettings (works with Wayland+GNOME schema)
+gsettings set org.gnome.desktop.session idle-delay 0
+gsettings set org.gnome.desktop.screensaver lock-enabled false
+gsettings set org.gnome.desktop.screensaver idle-activation-enabled false
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing'
+
+# Mask suspend/hibernate
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+# Disable console blanking
+sudo sed -i '/^consoleblank=/d' /boot/config.txt
+echo 'consoleblank=0' | sudo tee -a /boot/config.txt > /dev/null
+
+# 5. Neustart
 log "Setup abgeschlossen!"
 echo "Präsentations-URL: $PRESENTATION_URL"
 read -r -p "MÖCHTEN SIE JETZT NEUSTARTEN? [y/n] " reboot_choice
-if [[ "$reboot_choice" =~ ^[Yy]$ ]] && [ "$IS_TEST" = false ]; then
+if [[ "$reboot_choice" =~ ^[Yy]$ ]]; then
   sudo reboot
 fi

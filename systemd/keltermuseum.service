@@ -4,11 +4,11 @@ After=graphical.target
 
 [Service]
 Type=simple
-User=pi
+User=kelterpi
 WorkingDirectory=/home/pi/videopresi
 ExecStart=/bin/bash /home/pi/videopresi/scripts/start.sh
 Restart=always
-RestartSec=10
+RestartSec=20
 Environment=DISPLAY=:0
 
 [Install]

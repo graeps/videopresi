@@ -8,7 +8,7 @@
     {% for css_file in css %}
         <link rel="stylesheet" href="/static/styles/{{ css_file }}">
     {% endfor %}
-    <link rel="icon" href="/images/logo_inv.svg" type="image/x-icon">
+    <link rel="icon" href="/static/images/logo_inv.svg" type="image/x-icon">
     <script>
         const imgPath = "/static/images/";
         const videoPath = "";
@@ -25,7 +25,7 @@
 <main>
     {% for video in videos %}
         <div class="video">
-            <img class="slide-img" id="{{ video.image_id }}" src="">
+            <img class="slide-img" id="{{ video.image_id }}" src="" data-img="{{ video.image }}">
             <div class="shadow"></div>
             <h2>{{ video.title }}</h2>
             <p>{{ video.description }}</p>
@@ -40,7 +40,8 @@
 
 <div id="video-overlay"
      style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:black; z-index:1000;">
-    <video id="video-player" disablePictureInPicture controls autoplay controlsList="nofullscreen"
+    <video id="video-player" disablePictureInPicture controls autoplay
+           controlsList="nofullscreen noplaybackrate nodownload"
            style="width:100%; height:100%; object-fit:contain;"></video>
     <button id="close-video"
             style="position:absolute; top:10px; right:10px; z-index:1001; font-size:2em; background:none; color:white; border:none;">
@@ -54,6 +55,10 @@
 
 <script type="module" src="/static/scripts/{{ script }}"></script>
 <script>
+    document.querySelectorAll('.slide-img').forEach(img => {
+        img.src = imgPath + img.dataset.img;
+    });
+
     function playVideo(filename) {
         const overlay = document.getElementById("video-overlay");
         const player = document.getElementById("video-player");
