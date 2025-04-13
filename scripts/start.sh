@@ -24,7 +24,7 @@ while true; do
 
   # Starte Chromium im Kiosk-Modus
   echo "==== Starting Chromium ($PRESENTATION_URL) at $(date) ====" >> ${HOME}/videopresi/logs/run.log
-  chromium-browser "$PRESENTATION_URL" --kiosk --noerrdialogs --disable-infobars --no-first-run --enable-features=OverlayScrollbar --start-maximized >> ${HOME}/videopresi/logs/run.log 2>> ${HOME}/videopresi/logs/error.log &
+  chromium-browser "$PRESENTATION_URL" --kiosk --noerrdialogs --disable-infobars --no-first-run --enable-features=OverlayScrollbar --start-maximized --disable-features=Translate >> ${HOME}/videopresi/logs/run.log 2>> ${HOME}/videopresi/logs/error.log &
   CHROMIUM_PID=$!
 
   # Überwache Prozesse
