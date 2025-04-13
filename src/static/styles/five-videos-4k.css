@@ -1,3 +1,14 @@
+.slogan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    margin-bottom: 2vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Add max-width for very wide screens */
+    max-width: 100vw;
+}
+
 .slogan {
     position: relative;
     font-size: 4.5vh;
