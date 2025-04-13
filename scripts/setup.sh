@@ -22,7 +22,7 @@ case "$choice" in
   *) PRESENTATION_URL="http://localhost:5000" ;;
 esac
 
-echo "PRESENTATION_URL=\"$PRESENTATION_URL\"" > ${HOME}/videopsresi/presentation.conf
+echo "PRESENTATION_URL=\"$PRESENTATION_URL\"" > ${HOME}/videopresi/presentation.conf
 
 # 2. Abhängigkeiten
 log "Systemaktualisierungen & Python-Abhängigkeiten..."
@@ -35,16 +35,8 @@ source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# 3. systemd-Service
-log "Systemd-Service wird konfiguriert..."
-mkdir -p ${HOME}/.config/systemd/user/
-cp systemd/keltermuseum.service ${HOME}/.config/systemd/user/
-systemctl --user daemon-reload
-systemctl --user enable keltermuseum.service
-systemctl --user start keltermuseum.service
 
-
-# 4. Bildschirm-Schoner & Energiesparen deaktivieren (Wayland)
+# 3. Bildschirm-Schoner & Energiesparen deaktivieren (Wayland)
 log "Bildschirm-Schoner und Energiesparen werden deaktiviert (Wayland)..."
 
 # Disable power-saving using gsettings (works with Wayland+GNOME schema)
@@ -58,6 +50,18 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 # Disable console blanking
 sudo sed -i '/^consoleblank=/d' /boot/config.txt
 echo 'consoleblank=0' | sudo tee -a /boot/config.txt > /dev/null
+
+# 4. Labwc Autostart
+log "Labwc Autostart wird eingerichtet..."
+
+mkdir -p ${HOME}/.config/labwc
+
+cat << 'EOF' > ${HOME}/.config/labwc/autostart
+#!/bin/bash
+bash /home/kelterpi/videopresi/scripts/start.sh &
+EOF
+
+chmod +x ${HOME}/.config/labwc/autostart
 
 # 5. Neustart
 log "Setup abgeschlossen!"

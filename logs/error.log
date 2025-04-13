@@ -1,345 +1,197 @@
+Traceback (most recent call last):
+  File "/home/kelterpi/videopresi/src/videopresi_browser.py", line 133, in <module>
+    app.run(debug=true)
+                  ^^^^
+NameError: name 'true' is not defined. Did you mean: 'True'?
 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 121-756-312
-127.0.0.1 - - [12/Apr/2025 23:17:04] "[33mGET / HTTP/1.1[0m" 404 -
+ * Debugger PIN: 466-561-935
+127.0.0.1 - - [13/Apr/2025 01:53:09] "[33mGET / HTTP/1.1[0m" 404 -
+==== Process crashed at So 13. Apr 01:53:09 CEST 2025 ====
+127.0.0.1 - - [13/Apr/2025 01:53:09] "GET /einwecken HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 01:53:09] "[36mGET /static/styles/main-styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:09] "[36mGET /static/styles/three-videos.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:09] "[36mGET /static/images/logo_inv.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:09] "[36mGET /static/scripts/einwecken.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:09] "[36mGET /static/images/textur.avif HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:09] "[36mGET /static/fonts/Calibri_Bold.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:09] "[36mGET /static/fonts/BroadsheetRegular.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:10] "[36mGET /static/fonts/Calibri.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:10] "[36mGET /static/images/haltbarmachen/img01.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:10] "[36mGET /static/images/baecker/img01.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:10] "[36mGET /static/scripts/slideshow.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:10] "[36mGET /static/images/kizwebro/img01.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:10] "[36mGET /static/images/logo_inv.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:13] "[36mGET /static/images/kizwebro/img02.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:53:19] "[33mGET / HTTP/1.1[0m" 404 -
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+==== Process crashed at So 13. Apr 01:53:20 CEST 2025 ====
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 117-506-749
+127.0.0.1 - - [13/Apr/2025 01:55:47] "[33mGET / HTTP/1.1[0m" 404 -
+[1765:1765:0413/015554.028822:ERROR:request.cc(169)] Request ended (non-user cancelled).
 close object 1: Das Argument ist ungültig
-[928:928:0412/231714.185850:ERROR:request.cc(169)] Request ended (non-user cancelled).
 close object 2: Das Argument ist ungültig
 close object 3: Das Argument ist ungültig
-127.0.0.1 - - [12/Apr/2025 23:17:14] "GET /wengerter HTTP/1.1" 200 -
-close object 1: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 01:55:54] "GET /einwecken HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 01:55:54] "[36mGET /static/styles/main-styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:54] "[36mGET /static/styles/three-videos.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:54] "[36mGET /static/scripts/einwecken.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:54] "[36mGET /static/images/logo_inv.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:54] "[36mGET /static/images/textur.avif HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:55] "[36mGET /static/fonts/Calibri.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:55] "[36mGET /static/fonts/Calibri_Bold.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:55] "[36mGET /static/fonts/BroadsheetRegular.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:55] "[36mGET /static/scripts/slideshow.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:55] "[36mGET /static/images/kizwebro/img01.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:55] "[36mGET /static/images/baecker/img01.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:55:55] "[36mGET /static/images/haltbarmachen/img01.png HTTP/1.1[0m" 304 -
 close object 3: Das Argument ist ungültig
 close object 4: Das Argument ist ungültig
-127.0.0.1 - - [12/Apr/2025 23:17:15] "[36mGET /static/styles/five-videos-4k.css HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:15] "[36mGET /static/styles/main-styles.css HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:15] "[36mGET /static/scripts/wengerter.js HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:15] "[36mGET /static/images/logo_inv.svg HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/images/textur.avif HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/fonts/Calibri_Bold.ttf HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/fonts/Calibri.ttf HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/fonts/BroadsheetRegular.ttf HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/scripts/slideshow.js HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/images/imker/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/images/sense/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/images/mueller/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/images/wengerter/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:16] "[36mGET /static/images/sackkunde/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:19] "[36mGET /static/images/mueller/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:26] "[35m[1mGET /static/videos/wengerter.mp4 HTTP/1.1[0m" 206 -
-127.0.0.1 - - [12/Apr/2025 23:17:47] "[36mGET /static/images/imker/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:50] "[36mGET /static/images/logo_inv.svg HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:17:55] "[35m[1mGET /static/videos/wengerter.mp4 HTTP/1.1[0m" 206 -
-127.0.0.1 - - [12/Apr/2025 23:17:56] "[36mGET /static/images/sense/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:18:06] "[36mGET /static/images/wengerter/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:18:14] "[36mGET /static/images/sackkunde/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:18:23] "[36mGET /static/images/mueller/img03.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:18:32] "[36mGET /static/images/imker/img03.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:18:46] "[36mGET /static/images/sense/img03.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:18:50] "[36mGET /static/images/wengerter/img03.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:18:59] "[36mGET /static/images/sackkunde/img03.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:19:08] "[36mGET /static/images/mueller/img04.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:19:17] "[36mGET /static/images/imker/img04.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:19:26] "[36mGET /static/images/sense/img04.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:19:35] "[36mGET /static/images/wengerter/img04.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:19:44] "[36mGET /static/images/sackkunde/img04.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:19:53] "[36mGET /static/images/mueller/img05.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:19:59] "[35m[1mGET /static/videos/wengerter.mp4 HTTP/1.1[0m" 206 -
-127.0.0.1 - - [12/Apr/2025 23:19:59] "[35m[1mGET /static/videos/wengerter.mp4 HTTP/1.1[0m" 206 -
-127.0.0.1 - - [12/Apr/2025 23:20:02] "[36mGET /static/images/imker/img05.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:20:11] "[36mGET /static/images/sense/img05.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:20:20] "[36mGET /static/images/wengerter/img05.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:20:26] "[35m[1mGET /static/videos/sense.mp4 HTTP/1.1[0m" 206 -
-127.0.0.1 - - [12/Apr/2025 23:20:29] "[36mGET /static/images/sackkunde/img05.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:20:38] "[36mGET /static/images/mueller/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:20:47] "[36mGET /static/images/imker/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:20:56] "[36mGET /static/images/sense/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:21:02] "[35m[1mGET /static/videos/sense.mp4 HTTP/1.1[0m" 206 -
-127.0.0.1 - - [12/Apr/2025 23:21:02] "[35m[1mGET /static/videos/sense.mp4 HTTP/1.1[0m" 206 -
-127.0.0.1 - - [12/Apr/2025 23:21:05] "[36mGET /static/images/wengerter/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:21:14] "[36mGET /static/images/sackkunde/img01.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:21:23] "[36mGET /static/images/mueller/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:21:32] "[36mGET /static/images/imker/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:21:41] "[36mGET /static/images/sense/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:21:50] "[36mGET /static/images/wengerter/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:21:59] "[36mGET /static/images/sackkunde/img02.png HTTP/1.1[0m" 304 -
-127.0.0.1 - - [12/Apr/2025 23:22:08] "[36mGET /static/images/mueller/img03.png HTTP/1.1[0m" 304 -
-[928:928:0412/232212.956322:ERROR:wayland_event_watcher.cc(47)] libwayland: warning: queue 0x14000041c0 destroyed while proxies still attached:
+close object 5: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 01:55:58] "[36mGET /static/images/kizwebro/img02.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:56:07] "[36mGET /static/images/haltbarmachen/img02.png HTTP/1.1[0m" 304 -
+close object 1: Das Argument ist ungültig
+close object 2: Das Argument ist ungültig
+close object 6: Das Argument ist ungültig
+close object 1: Das Argument ist ungültig
+close object 2: Das Argument ist ungültig
+close object 7: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 01:56:16] "[36mGET /static/images/baecker/img02.png HTTP/1.1[0m" 304 -
+[1765:1765:0413/015618.308145:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+127.0.0.1 - - [13/Apr/2025 01:56:25] "[36mGET /static/images/kizwebro/img03.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:56:34] "[36mGET /static/images/haltbarmachen/img03.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:56:43] "[36mGET /static/images/baecker/img03.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:56:52] "[36mGET /static/images/kizwebro/img04.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:57:01] "[36mGET /static/images/haltbarmachen/img04.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:57:10] "[36mGET /static/images/baecker/img04.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:57:19] "[36mGET /static/images/kizwebro/img05.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:57:28] "[36mGET /static/images/haltbarmachen/img05.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 01:57:37] "[36mGET /static/images/baecker/img05.png HTTP/1.1[0m" 304 -
+Gdk-Message: 02:06:47.974: Error reading events from display: Datenübergabe unterbrochen (broken pipe)
+==== Process crashed at So 13. Apr 02:06:48 CEST 2025 ====
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 466-561-935
+127.0.0.1 - - [13/Apr/2025 02:07:00] "[33mGET / HTTP/1.1[0m" 404 -
+close object 1: Das Argument ist ungültig
+[1167:1167:0413/020709.161045:ERROR:request.cc(169)] Request ended (non-user cancelled).
+close object 2: Das Argument ist ungültig
+close object 3: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 02:07:09] "GET /einwecken HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:07:09] "[36mGET /static/styles/three-videos.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:09] "[36mGET /static/styles/main-styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:09] "[36mGET /static/images/logo_inv.svg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:09] "[36mGET /static/scripts/einwecken.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:09] "[36mGET /static/images/textur.avif HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:10] "[36mGET /static/fonts/BroadsheetRegular.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:10] "[36mGET /static/fonts/Calibri.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:10] "[36mGET /static/fonts/Calibri_Bold.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:10] "[36mGET /static/images/kizwebro/img01.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:10] "[36mGET /static/scripts/slideshow.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:10] "[36mGET /static/images/baecker/img01.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:10] "[36mGET /static/images/haltbarmachen/img01.png HTTP/1.1[0m" 304 -
+close object 3: Das Argument ist ungültig
+close object 4: Das Argument ist ungültig
+close object 5: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 02:07:13] "[36mGET /static/images/kizwebro/img02.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:16] "[33mGET /static/videos/haltbarmachen.mp4 HTTP/1.1[0m" 404 -
+127.0.0.1 - - [13/Apr/2025 02:07:41] "[36mGET /static/images/haltbarmachen/img02.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:07:50] "[36mGET /static/images/baecker/img02.png HTTP/1.1[0m" 304 -
+close object 1: Das Argument ist ungültig
+close object 2: Das Argument ist ungültig
+close object 6: Das Argument ist ungültig
+close object 1: Das Argument ist ungültig
+close object 6: Das Argument ist ungültig
+close object 7: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 02:08:00] "[36mGET /static/images/kizwebro/img03.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:08:08] "[36mGET /static/images/haltbarmachen/img03.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:08:17] "[36mGET /static/images/baecker/img03.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:08:26] "[36mGET /static/images/kizwebro/img04.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:08:35] "[36mGET /static/images/haltbarmachen/img04.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:08:44] "[36mGET /static/images/baecker/img04.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:08:53] "[36mGET /static/images/kizwebro/img05.png HTTP/1.1[0m" 304 -
+close object 1: Das Argument ist ungültig
+close object 2: Das Argument ist ungültig
+close object 7: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 02:09:02] "[36mGET /static/images/haltbarmachen/img05.png HTTP/1.1[0m" 304 -
+close object 5: Das Argument ist ungültig
+close object 6: Das Argument ist ungültig
+close object 8: Das Argument ist ungültig
+close object 3: Das Argument ist ungültig
+close object 4: Das Argument ist ungültig
+close object 8: Das Argument ist ungültig
+close object 2: Das Argument ist ungültig
+close object 5: Das Argument ist ungültig
+close object 6: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 02:09:11] "[36mGET /static/images/baecker/img05.png HTTP/1.1[0m" 304 -
+ * Detected change in '/home/kelterpi/videopresi/venv/lib/python3.11/site-packages/_distutils_hack/__init__.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/home/kelterpi/videopresi/src/videopresi_browser.py", line 1, in <module>
+    from flask import Flask, render_template, request
+ModuleNotFoundError: No module named 'flask'
+==== Process crashed at So 13. Apr 02:13:51 CEST 2025 ====
+Traceback (most recent call last):
+  File "/home/kelterpi/videopresi/src/videopresi_browser.py", line 1, in <module>
+    from flask import Flask, render_template, request
+ModuleNotFoundError: No module named 'flask'
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 466-561-935
+127.0.0.1 - - [13/Apr/2025 02:14:37] "[33mGET / HTTP/1.1[0m" 404 -
+[1191:1191:0413/021448.093585:ERROR:request.cc(169)] Request ended (non-user cancelled).
+close object 1: Das Argument ist ungültig
+close object 2: Das Argument ist ungültig
+close object 3: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 02:14:48] "GET /wengerter HTTP/1.1" 200 -
+close object 1: Das Argument ist ungültig
+close object 3: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 02:14:49] "[36mGET /static/images/logo_inv.svg HTTP/1.1[0m" 304 -
+close object 4: Das Argument ist ungültig
+127.0.0.1 - - [13/Apr/2025 02:14:49] "[36mGET /static/styles/main-styles.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:14:49] "GET /static/styles/five-videos-4k.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:14:49] "GET /static/scripts/wengerter.js HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:14:49] "[36mGET /static/images/textur.avif HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "[36mGET /static/fonts/BroadsheetRegular.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "[36mGET /static/fonts/Calibri_Bold.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "[36mGET /static/fonts/Calibri.ttf HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "GET /static/images/mueller/img01.png HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "GET /static/images/sackkunde/img01.png HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "GET /static/images/sense/img01.png HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "GET /static/images/wengerter/img01.png HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "GET /static/images/imker/img01.png HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:14:50] "[36mGET /static/scripts/slideshow.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [13/Apr/2025 02:14:53] "GET /static/images/mueller/img02.png HTTP/1.1" 200 -
+127.0.0.1 - - [13/Apr/2025 02:15:05] "GET /static/images/imker/img02.png HTTP/1.1" 200 -
+[1191:1191:0413/021530.700570:ERROR:wayland_event_watcher.cc(47)] libwayland: warning: queue 0x1c00004200 destroyed while proxies still attached:
 
-[928:928:0412/232212.956649:ERROR:wayland_event_watcher.cc(47)] libwayland:   wl_shm_pool#45 still attached
+[1191:1191:0413/021530.700876:ERROR:wayland_event_watcher.cc(47)] libwayland:   wl_shm_pool#45 still attached
 
-==== Process crashed at Sa 12. Apr 23:22:13 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:22:23] "[33mGET / HTTP/1.1[0m" 404 -
+==== Process crashed at So 13. Apr 02:15:30 CEST 2025 ====
+127.0.0.1 - - [13/Apr/2025 02:15:40] "[33mGET / HTTP/1.1[0m" 404 -
 Address already in use
 Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:22:24 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:22:34] "[33mGET / HTTP/1.1[0m" 404 -
+==== Process crashed at So 13. Apr 02:15:41 CEST 2025 ====
+127.0.0.1 - - [13/Apr/2025 02:15:51] "[33mGET / HTTP/1.1[0m" 404 -
 Address already in use
 Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:22:34 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:22:45] "[33mGET / HTTP/1.1[0m" 404 -
+==== Process crashed at So 13. Apr 02:15:52 CEST 2025 ====
+127.0.0.1 - - [13/Apr/2025 02:16:02] "[33mGET / HTTP/1.1[0m" 404 -
 Address already in use
 Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:22:45 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:22:55] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:22:56 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:23:06] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:23:07 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:23:17] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:23:18 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:23:28] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:23:29 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:23:39] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:23:40 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:23:50] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:23:51 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:24:01] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:24:02 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:24:12] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:24:13 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:24:23] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:24:24 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:24:34] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:24:35 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:24:45] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:24:46 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:24:56] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:24:57 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:25:07] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:25:08 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:25:18] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:25:19 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:25:29] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:25:30 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:25:40] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:25:41 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:25:51] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:25:52 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:26:02] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:26:03 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:26:13] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:26:13 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:26:24] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:26:24 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:26:34] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:26:35 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:26:45] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:26:46 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:26:56] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:26:57 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:27:07] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:27:08 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:27:18] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:27:19 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:27:29] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:27:30 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:27:40] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:27:41 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:27:51] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:27:52 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:28:02] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:28:02 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:28:12] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:28:13 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:28:23] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:28:24 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:28:34] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:28:35 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:28:45] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:28:46 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:28:56] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:28:57 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:29:07] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:29:08 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:29:18] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:29:19 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:29:29] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:29:30 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:29:40] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:29:41 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:29:51] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:29:51 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:30:02] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:30:02 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:30:12] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:30:13 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:30:23] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:30:24 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:30:34] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:30:35 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:30:45] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:30:46 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:30:56] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:30:57 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:31:07] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:31:08 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:31:18] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:31:19 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:31:29] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:31:30 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:31:40] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:31:41 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:31:51] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:31:52 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:32:02] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:32:03 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:32:13] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:32:14 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:32:24] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:32:25 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:32:35] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:32:35 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:32:46] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:32:46 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:32:57] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:32:58 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:33:08] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:33:08 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:33:18] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:33:19 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:33:29] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:33:30 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:33:40] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:33:41 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:33:51] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:33:52 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:34:02] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:34:03 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:34:13] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:34:14 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:34:24] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:34:25 CEST 2025 ====
-127.0.0.1 - - [12/Apr/2025 23:34:35] "[33mGET / HTTP/1.1[0m" 404 -
-Address already in use
-Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
-==== Process crashed at Sa 12. Apr 23:34:36 CEST 2025 ====
+==== Process crashed at So 13. Apr 02:16:04 CEST 2025 ====
