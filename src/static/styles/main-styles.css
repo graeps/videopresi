@@ -40,8 +40,9 @@ body {
     background-blend-mode: multiply;
     color: #fff;
     user-select: none;
-    /* Ensure consistent scaling */
     overflow-x: hidden;
+    /*Diese Zeile auskommentieren um den Cursor zu sehen.*/
+    cursor: none;
 }
 
 .slogan-container {

@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, request
-from videoplayer import VideoPlayer
+from old_videoplayer_ctk import VideoPlayer
 from multiprocessing import Process
 
 app = Flask(__name__)
