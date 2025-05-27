@@ -2,10 +2,10 @@
 
 ## Beschreibung
 
-Die Präsentationen laufen als lokale Website auf einem RaspberryPi. Es laufen Vorschauen für Videos als Slideshows, die
+Die Präsentationen laufen als lokale Website auf einem RaspberryPi. Es laufen Slideshow-Vorschauen für Videos, die
 durch Anklicken gestartet werden können.
-In der aktuellen Version werden die Videos in Firefox abgespielt. Alternativ können die Videos auch über einen custom
-player mit vlc-player und tkinter abgespielt werden, siehe `old_videoplayer_ctk/`.
+In der aktuellen Version werden die Videos in Firefox abgespielt. Alternativ können die Videos auch über einen Custom
+Player (Nutzt vlc-player und tkinter) abgespielt werden, siehe `old_videoplayer_ctk/`.
 
 Durch Ausführen von `scripts/setup.sh` kann ein RaspberryPi erstmals in Betrieb genommen werden. Danach wird nach dem
 Hochfahren automatisch die gewünschte Präsentation im Kiosk-Modus gestartet.
@@ -14,7 +14,7 @@ ___
 
 ## RaspberryPi einrichten:
 
-Der RaspberryPi benötigt OS Debian Bookworm.
+Der RaspberryPi benötigt das neuste OS Debian Bookworm.
 
 1. Terminal öffnen mit CTRL+ALT+T
 2. Die Präsentationen **ohne** Video Dateien herunterzuladen:
