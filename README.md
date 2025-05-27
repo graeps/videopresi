@@ -18,8 +18,8 @@ Der RaspberryPi benötigt OS Debian Bookworm.
 
 1. Terminal öffnen mit CTRL+ALT+T
 2. Die Präsentationen **ohne** Video Dateien herunterzuladen:
-   `git clone -b v2 https://github.com/timtombobjohn/videopresi.git`. Darauf achten, dass der Ordner
-   als `/home/pi/videopresi` abgelegt ist.
+   `git clone https://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@github.com/graeps/videopresi.git`. Darauf achten, dass der Ordner
+   unter `/home/pi/videopresi` abgelegt ist.
 3. Videos auf den Raspi kopieren/herunterladen und in `/home/pi/videopresi/src/static/videos/`
    ablegen. Filmdateien unbedingt wie in unten beschrieben benennen!
 4. Im Terminal `/home/pi/videopresi/scripts/setup.sh` ausführen und die weiteren Schritte befolgen. Es kann aus einer der aktuell fünf Präsentationen (Wengerter, Schmied, Wagner, Küfer, Einmachen&Einwecken) ausgewählt werden.
