@@ -121,7 +121,7 @@ def show_video_collection(presentation):
         },
         "schulprojekt": {  # TODO: Namen etc aktualisieren
             "title": "Keltermuseum Unterjesingen - Schulprojekt",
-            "css": ["five-videos-4k.css"],
+            "css": ["five-videos.css"],
             "script": "schulproject.js",
             "videos": [
                 {
