@@ -118,6 +118,48 @@ def show_video_collection(presentation):
                     "image": "sackkunde/img01.png",
                 },
             ]
+        },
+        "schulprojekt": {  # TODO: Namen etc aktualisieren
+            "title": "Keltermuseum Unterjesingen - Schulprojekt",
+            "css": ["five-videos-4k.css"],
+            "script": "schulproject.js",
+            "videos": [
+                {
+                    "title": "Titel Film1 ",
+                    "description": "Untertitel (m:ss)",
+                    "video_file": "video.mp4",
+                    "image_id": "img-name1",
+                    "image": "titel/img01.png",
+                },
+                {
+                    "title": "Titel Film2",
+                    "description": "Untertitel (m:ss)",
+                    "video_file": "video.mp4",
+                    "image_id": "img-name2",
+                    "image": "titel/img01.png",
+                },
+                {
+                    "title": "Titel Film3",
+                    "description": "Untertitel (m:ss)",
+                    "video_file": "video.mp4",
+                    "image_id": "img-name3",
+                    "image": "titel/img01.png",
+                },
+                {
+                    "title": "Titel Film4",
+                    "description": "Untertitel (m:ss)",
+                    "video_file": "video.mp4",
+                    "image_id": "img-name4",
+                    "image": "titel/img01.png",
+                },
+                {
+                    "title": "Titel Film5",
+                    "description": "Untertitel (m:ss)",
+                    "video_file": "video.mp4",
+                    "image_id": "img-name5",
+                    "image": "titel/img01.png",
+                },
+            ]
         }
     }
 

@@ -11,7 +11,8 @@ echo "2) Der Küfer"
 echo "3) Der Wagner"
 echo "4) Einwecken, Haltbarmachen, der Bäcker"
 echo "5) Der Wengerter, Sensenkurs, Mühle, Imker und Sackkunde"
-read -r -p "Wähle mit Taste (1/2/3/4/5): " choice
+echo "6) Schulprojekt"
+read -r -p "Wähle mit Taste (1/2/3/4/5/6): " choice
 
 case "$choice" in
   1) PRESENTATION_URL="http://localhost:5000/schmied" ;;
@@ -19,6 +20,7 @@ case "$choice" in
   3) PRESENTATION_URL="http://localhost:5000/wagner" ;;
   4) PRESENTATION_URL="http://localhost:5000/einwecken" ;;
   5) PRESENTATION_URL="http://localhost:5000/wengerter" ;;
+  6) PRESENTATION_URL="http://localhost:5000/schulprojekt" ;;
   *) PRESENTATION_URL="http://localhost:5000" ;;
 esac
 
@@ -66,7 +68,7 @@ chmod +x ${HOME}/.config/labwc/autostart
 # 5. Neustart
 log "Setup abgeschlossen!"
 echo "Präsentations-URL: $PRESENTATION_URL"
-read -r -p "MÖCHTEN SIE JETZT NEUSTARTEN? [y/n] " reboot_choice
+read -r -p "JETZT NEUSTARTEN? [y/n] " reboot_choice
 if [[ "$reboot_choice" =~ ^[Yy]$ ]]; then
   sudo reboot
 fi
