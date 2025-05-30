@@ -18,6 +18,7 @@ def show_video_collection(presentation):
                     "video_file": "kuefer.mp4",
                     "image_id": "img-kuefer",
                     "image": "kuefer/img01.png",
+                    "button_text": "Film starten"
                 }
             ]
         },
@@ -32,6 +33,7 @@ def show_video_collection(presentation):
                     "video_file": "schmied.mp4",
                     "image_id": "img-schmied",
                     "image": "schmied/img01.png",
+                    "button_text": "Film starten"
                 }
             ]
         },
@@ -46,6 +48,7 @@ def show_video_collection(presentation):
                     "video_file": "wagner.mp4",
                     "image_id": "img-wagner",
                     "image": "wagner/img01.png",
+                    "button_text": "Film starten"
                 }
             ]
         },
@@ -60,6 +63,7 @@ def show_video_collection(presentation):
                     "video_file": "KiZweBro.mp4",
                     "image_id": "img-kizwebro",
                     "image": "kizwebro/img01.png",
+                    "button_text": "Film starten"
                 },
                 {
                     "title": "Lebensmittel haltbar machen",
@@ -67,6 +71,7 @@ def show_video_collection(presentation):
                     "video_file": "haltbarmachen.mp4",
                     "image_id": "img-haltbarmachen",
                     "image": "haltbarmachen/img01.png",
+                    "button_text": "Film starten"
                 },
                 {
                     "title": "Der Bäcker",
@@ -74,6 +79,7 @@ def show_video_collection(presentation):
                     "video_file": "baecker.mp4",
                     "image_id": "img-baecker",
                     "image": "baecker/img01.png",
+                    "button_text": "Film starten"
                 },
             ]
         },
@@ -88,6 +94,7 @@ def show_video_collection(presentation):
                     "video_file": "mueller.mp4",
                     "image_id": "img-mueller",
                     "image": "mueller/img01.png",
+                    "button_text": "Film starten"
                 },
                 {
                     "title": "Der Imker",
@@ -95,6 +102,7 @@ def show_video_collection(presentation):
                     "video_file": "imker.mp4",
                     "image_id": "img-imker",
                     "image": "imker/img01.png",
+                    "button_text": "Film starten"
                 },
                 {
                     "title": "Mit der Sense mähen",
@@ -102,6 +110,7 @@ def show_video_collection(presentation):
                     "video_file": "sense.mp4",
                     "image_id": "img-sense",
                     "image": "sense/img01.png",
+                    "button_text": "Film starten"
                 },
                 {
                     "title": "Der Wengerter",
@@ -109,6 +118,7 @@ def show_video_collection(presentation):
                     "video_file": "wengerter.mp4",
                     "image_id": "img-wengerter",
                     "image": "wengerter/img01.png",
+                    "button_text": "Film starten"
                 },
                 {
                     "title": "Kleine Sackkunde",
@@ -116,48 +126,54 @@ def show_video_collection(presentation):
                     "video_file": "sackkunde.mp4",
                     "image_id": "img-sackkunde",
                     "image": "sackkunde/img01.png",
+                    "button_text": "Film starten"
                 },
             ]
         },
-        "schulprojekt": {  # TODO: Namen etc aktualisieren
+        "schulprojekt": {
             "title": "Keltermuseum Unterjesingen - Schulprojekt",
             "css": ["five-videos.css"],
-            "script": "schulproject.js",
+            "script": "schulprojekt.js",
             "videos": [
                 {
-                    "title": "Titel Film1 ",
-                    "description": "Untertitel (m:ss)",
-                    "video_file": "video.mp4",
-                    "image_id": "img-name1",
-                    "image": "titel/img01.png",
+                    "title": "Lore Köhm erzählt...",
+                    "description": "Jahrgang 1927 (5:01)",
+                    "video_file": "lore_koehm.mp4",
+                    "image_id": "img-lore",
+                    "image": "lore_koehm/img01.jpg",
+                    "button_text": "Audio starten"
                 },
                 {
-                    "title": "Titel Film2",
-                    "description": "Untertitel (m:ss)",
-                    "video_file": "video.mp4",
-                    "image_id": "img-name2",
-                    "image": "titel/img01.png",
+                    "title": "Die neue Schule",
+                    "description": "Heimatfilm (3:32)",
+                    "video_file": "heimatfilm.mp4",
+                    "image_id": "img-heimatfilm",
+                    "image": "heimatfilm/img01.png",
+                    "button_text": "Film starten"
                 },
                 {
-                    "title": "Titel Film3",
-                    "description": "Untertitel (m:ss)",
-                    "video_file": "video.mp4",
+                    "title": "Elfriede Bergmeier erzählt...",
+                    "description": "Jahrgang 1930 (5:36)",
+                    "video_file": "elfriede_bergmeir.mp4",
                     "image_id": "img-name3",
-                    "image": "titel/img01.png",
+                    "image": "elfriede_bergmeir/img01.jpg",
+                    "button_text": "Audio starten"
                 },
                 {
-                    "title": "Titel Film4",
-                    "description": "Untertitel (m:ss)",
-                    "video_file": "video.mp4",
+                    "title": "Heinz Eiting erzählt...",
+                    "description": "Jahrgang 1939 (3:05)",
+                    "video_file": "heinz_eiting.mp4",
                     "image_id": "img-name4",
-                    "image": "titel/img01.png",
+                    "image": "heinz_eiting/img01.jpg",
+                    "button_text": "Audio starten"
                 },
                 {
-                    "title": "Titel Film5",
-                    "description": "Untertitel (m:ss)",
-                    "video_file": "video.mp4",
+                    "title": "Adolf Zeeb erzählt...",
+                    "description": "Jahrgang 1950 (5:27)",
+                    "video_file": "adolf_zeeb.mp4",
                     "image_id": "img-name5",
-                    "image": "titel/img01.png",
+                    "image": "adolf_zeeb/img01.jpg",
+                    "button_text": "Audio starten"
                 },
             ]
         }

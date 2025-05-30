@@ -33,18 +33,18 @@ ___
 ## Übersicht Dateien
 
 ```videopresi
-├── logs                      # Für Debuggin, falls Videoplayer oder Autostart nicht funktionieren
+├── logs                      
 ├── scripts                   # Bash-Scripts für Setup und Start
 ├── src             
 │   ├── old_videoplayer_ctk   # Aktuell nicht genutzt                    
 │   ├── static                   
-│   │   ├── fonts             # Schriftarten
-│   │   ├── images            # Ablageort für Slideshow-Bilder
+│   │   ├── fonts             
+│   │   ├── images  <--------- Hier Bilder ablegen
 │   │   ├── scripts           # Javascript für Slideshows und Videoplayerfunktion
 │   │   ├── styles            # CSS für Slideshows
-│   │   └── videos            # Ablageort für Videos (Namen beachten!)
+│   │   └── videos  <--------- Hier Videos ablegen (Namen beachten!)
 │   ├── templates             # HTML Templates
-└── systemd                   # Dateien für Autostart setup auf RasperryPi
+└── systemd                   # Dateien für Autostart-Setup auf RasperryPi
 ```
 
 ___
@@ -78,3 +78,10 @@ Die Videos für die jeweiligen Präsentationen müssen unter folgenden Namen in 
 * `sense.mp4`
 * `wengerter.mp4`
 * `sackkunde.mp4`
+
+**Schulprojekt**
+* `lore_koehm.mp4`
+* `elfriede_bergmeir.mp4`
+* `heinz_eiting.mp4`
+* `adolf_zeeb.mp4`
+* `heimatfilm.mp4` 

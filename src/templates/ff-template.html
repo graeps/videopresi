@@ -30,7 +30,7 @@
                 <div class="shadow"></div>
                 <h2>{{ video.title }}</h2>
                 <p>{{ video.description }}</p>
-                <a class="button" onclick="playVideo(videoPath + '{{ video.video_file }}')">Film starten</a>
+                <a class="button" onclick="playVideo(videoPath + '{{ video.video_file }}')">{{ video.button_text }}</a>
             </div>
         {% endfor %}
     </main>

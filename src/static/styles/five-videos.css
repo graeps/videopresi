@@ -11,7 +11,7 @@
 }
 
 .video {
-    flex: 0 0 20%;
+    flex: 0 0 27%;
     position: relative;
     height: 55%;
     box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3);
@@ -25,7 +25,11 @@
 
 
 .video:nth-child(2) {
-    flex-basis: 27%;
+    flex-basis: 25%;
+}
+
+.video:nth-child(3) {
+    flex-basis: 30%;
 }
 
 .video:nth-child(4) {
@@ -34,6 +38,7 @@
 }
 
 .video:nth-child(5) {
+    flex-basis: 27%;
     margin-right: 10vh;
     margin-top: -3vh;
 }
