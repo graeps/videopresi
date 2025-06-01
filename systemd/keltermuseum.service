@@ -4,7 +4,7 @@ PartOf=graphical-session.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/bash /home/kelterpi/videopresi/scripts/start.sh
+ExecStart=/usr/bin/bash %h/videopresi/scripts/start.sh
 Restart=always
 RestartSec=20
 
