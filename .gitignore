@@ -1,3 +1,4 @@
 *.mp4
 presentation.conf
 clean-venv-videopresi/
+src/static/images/
